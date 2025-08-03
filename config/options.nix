@@ -21,12 +21,19 @@
     undofile = true;
 
     scrolloff = 8;
+
+    winblend = 0;
   };
 
   diagnostic.settings = {
     virtual_text = true;
     underline = true;
   };
+
+ extraConfigLua = ''
+ vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+ '';
 
   autoCmd = [
     {

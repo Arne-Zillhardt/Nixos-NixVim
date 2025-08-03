@@ -8,10 +8,7 @@
 			clangd.enable = true;
 			cmake.enable = true;
 			csharp_ls.enable = true;
-			css_variables = {
-				enable = true;
-				package = pkgs.csslint;
-			};
+			cssls.enable = true;
 			dockerls.enable = true;
 			eslint.enable = true;
 			fish_lsp.enable = true;
